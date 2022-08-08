@@ -1,0 +1,27 @@
+/* Importação animação */
+@import url("./animacao.css");
+
+/* Alerta */
+
+.alerta{
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  z-index: 10;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+.alerta.ativo{
+  display: block;
+  animation: fadeInDown .3s forwards;
+}
+
+.alerta_mensagem{
+  background-color: white;
+  display: inline-block;
+  padding: 20px 40px;
+  border: 2px solid black;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1), 0px 4px 10px rgba(0, 0, 0, .2);
+}
